@@ -1,0 +1,246 @@
+@import url('[https://fonts.googleapis.com/css2?family=Manrope\:wght@400;600\&display=swap](https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap)');
+
+body {
+font-family: 'Manrope', sans-serif;
+margin: 0;
+padding: 0;
+background: linear-gradient(to right, #e9defa, #fbfcdb);
+color: #333;
+}
+
+.container {
+width: 90%;
+max-width: 1200px;
+margin: auto;
+}
+
+header {
+background: linear-gradient(to right, #ddd6f3, #faaca8);
+color: white;
+padding: 20px 0;
+}
+
+.header-top {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logo {
+font-weight: bold;
+font-size: 1.5rem;
+}
+
+.logo span {
+color: #ff0097;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+margin-left: 20px;
+font-weight: 500;
+}
+
+nav a.active {
+color: #ff0097;
+font-weight: bold;
+}
+
+.reservation {
+text-align: center;
+padding: 60px 20px;
+}
+
+.reservation h1 {
+margin-bottom: 10px;
+font-size: 2.5rem;
+color: #37415c;
+}
+
+.reservation p {
+margin-bottom: 12px;
+color: #444;
+}
+
+.reservation .subtitle {
+font-size: 1rem;
+font-weight: 500;
+color: #777;
+margin-bottom: 30px;
+}
+
+.form-row {
+display: flex;
+justify-content: center;
+gap: 10px;
+flex-wrap: wrap;
+}
+
+.form-row select,
+.form-row input {
+padding: 10px;
+width: 150px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+.form-row button {
+background: #ff0097;
+color: white;
+border: none;
+padding: 10px 20px;
+font-weight: bold;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.info {
+padding: 40px 20px;
+text-align: center;
+}
+
+.info h2 {
+font-size: 1.4rem;
+color: #37415c;
+}
+
+.info p {
+color: #666;
+margin-top: 10px;
+max-width: 600px;
+margin-left: auto;
+margin-right: auto;
+}
+
+footer {
+background: linear-gradient(to right, #ddd6f3, #faaca8);
+color: white;
+padding: 40px 20px;
+}
+
+.footer-row {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+gap: 30px;
+}
+
+footer a {
+display: block;
+color: #fdfdfd;
+text-decoration: none;
+margin-top: 8px;
+}
+
+.search-summary {
+font-family: 'Poppins', sans-serif;
+font-weight: 500;
+background: linear-gradient(to right, #f43b47, #453a94);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+<style>
+.login-modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.login-modal.hidden {
+  display: none;
+}
+
+.login-box {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.modal-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 24px;
+  color: #333;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 24px;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px 14px;
+  margin: 6px 0 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.login-form label {
+  font-weight: 500;
+  color: #444;
+  font-size: 14px;
+}
+
+.remember-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 8px;
+}
+
+.login-btn {
+  background-color: #ff5a5f;
+  color: white;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.login-btn:hover {
+  background-color: #e0484d;
+}
+
+.forgot-link {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  color: #777;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.heart-icon {
+  fill: none;
+  stroke: #e91e63;
+  transition: all 0.3s ease;
+}
+
+.wishlist-icon.active .heart-icon {
+  fill: #e91e63;
+}
+
+</style>
